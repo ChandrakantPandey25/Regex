@@ -11,7 +11,7 @@ namespace Regex_UserRegistration
         {
             Console.WriteLine("Enter the name");
             string firstName = Console.ReadLine();
-            string pattern = "(^[^a-z][A-z]{1}[a-z]{2,}$)";
+            string pattern = "(^[^a-z][A-z]{1}[a-z]{1,}$)";
             if (Regex.IsMatch(firstName, pattern))
                 Console.WriteLine("entered name is valid");
             else

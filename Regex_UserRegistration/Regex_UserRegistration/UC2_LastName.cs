@@ -5,20 +5,23 @@ using System.Text.RegularExpressions;
 
 namespace Regex_UserRegistration
 {
-    public class UC1_FirstName
+    class UC2_LastName
     {
-        public void FirstName()
+        public void LastName()
         {
-            Console.WriteLine("Enter the name");
-            string firstName = Console.ReadLine();
+            Console.WriteLine("Enter Last Name");
+           string lastName = Console.ReadLine();
             string pattern = "(^[^a-z][A-z]{1}[a-z]{1,}$)";
-            if (Regex.IsMatch(firstName, pattern))
-                Console.WriteLine("entered name is valid");
+            if (Regex.IsMatch(lastName, pattern))
+            {
+                Console.WriteLine("Entered Name is valid");
+            }
             else
             {
                 Console.WriteLine("Entered name is Invalid... please give first character in capital and minimum 3 characters name");
-                FirstName();
+                LastName();
             }
+
         }
     }
 }

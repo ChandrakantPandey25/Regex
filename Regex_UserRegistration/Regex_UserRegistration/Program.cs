@@ -11,6 +11,7 @@ namespace Regex_UserRegistration
             Console.WriteLine("Enter 2 to validate lastname");
             Console.WriteLine("Enter 3 to validate email");
             Console.WriteLine("Enter 4 to validate mobile number");
+            Console.WriteLine("Enter 5 to validate PassWord");
             switch(Convert.ToInt32(Console.ReadLine()))
             {
                 case 1:
@@ -29,7 +30,10 @@ namespace Regex_UserRegistration
                     UC4_PhoneNumber mobileNumber = new UC4_PhoneNumber();
                     mobileNumber.MobileNumber();
                     break;
-
+                case 5:
+                    UC5_PassWord password = new UC5_PassWord();
+                    password.Password();
+                    break;
 
             }
         }

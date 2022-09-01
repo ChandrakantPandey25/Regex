@@ -10,6 +10,7 @@ namespace Regex_UserRegistration
             Console.WriteLine("Enter 1 to validate firstname");
             Console.WriteLine("Enter 2 to validate lastname");
             Console.WriteLine("Enter 3 to validate email");
+            Console.WriteLine("Enter 4 to validate mobile number");
             switch(Convert.ToInt32(Console.ReadLine()))
             {
                 case 1:
@@ -23,6 +24,10 @@ namespace Regex_UserRegistration
                 case 3:
                     UC3_ValidEmail validEmail = new UC3_ValidEmail();
                     validEmail.ValidEmail();
+                    break;
+                case 4:
+                    UC4_PhoneNumber mobileNumber = new UC4_PhoneNumber();
+                    mobileNumber.MobileNumber();
                     break;
 
 
